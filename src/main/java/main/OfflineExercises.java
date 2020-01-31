@@ -18,7 +18,7 @@ public class OfflineExercises {
 		String word = "";
 
 		for (char letter : input.toCharArray()) {
-			for (int i = 0; i < input.length(); i++) {
+			for (int i = 0; i < 3; i++) {
 				word += letter;
 			}
 		}
