@@ -37,12 +37,12 @@ public class OfflineExercises {
 	// getBert("xxbeRTyy") → ""
 
 	public String getBert(String input) {
-		if (input.contains("bert")) {
-			for (int i = 0; i < input.length(); i++) {
-				// input.
+		if (input.toLowerCase().contains("bert")) {
+			if (input.toLowerCase().substring(input.lastIndexOf("bert")).contains("bert")){
+				String treb=input.substring(input.toLowerCase().indexOf("bert")+4,input.toLowerCase().lastIndexOf("bert"));
+				return new StringBuilder(input.substring(input.toLowerCase().indexOf("bert")+4,input.toLowerCase().lastIndexOf("bert"))).reverse().toString();
 			}
-		}
-		return "";
+		}return "";
 	}
 
 	// Given three ints, a b c, one of them is small, one is medium and one is
