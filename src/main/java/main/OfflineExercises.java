@@ -192,12 +192,18 @@ public class OfflineExercises {
 	// largest("555 72 86 45 10") → 15
 
 	public int largest(String arg1) {
-		int arrs[][];
-		int arr[];
-		//arr=arg1.split(" ");
-		//Integer.parseInt(arg1);
-		return 0;
-
+		int temp=0;
+		int high=0;
+		for (char num:arg1.toCharArray()){
+			if (num!=' '){
+				temp+=num-48;
+			}else{
+				if (high<temp){
+					high=temp;
+				}
+				temp=0;
+			}
+		}
+		return high;
 	}
-
 }
