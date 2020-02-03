@@ -204,6 +204,8 @@ public class OfflineExercises {
 				}
 				temp=0;
 			}
+		}if (high<temp){
+				high=temp;
 		}
 		return high;
 	}
