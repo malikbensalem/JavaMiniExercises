@@ -39,7 +39,7 @@ public class OfflineExercises {
 
 	public String getBert(String input) {
 		if (input.toLowerCase().contains("bert")) {
-			if (input.toLowerCase().substring(input.lastIndexOf("bert")).contains("bert")){
+			if (input.toLowerCase().substring(input.indexOf("bert")+4).contains("bert")){
 				String treb=input.substring(input.toLowerCase().indexOf("bert")+4,input.toLowerCase().indexOf("bert")+4);
 				return new StringBuilder(input.substring(input.toLowerCase().indexOf("bert")+4,input.toLowerCase().lastIndexOf("bert"))).reverse().toString();
 			}
