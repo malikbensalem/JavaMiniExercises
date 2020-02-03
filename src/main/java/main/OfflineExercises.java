@@ -97,9 +97,7 @@ public class OfflineExercises {
 
 	public boolean endsDev(String input) {
 		if (input.length() >= 3) {
-			if (input.substring(input.length() - 3).toLowerCase().equals("dev")) {
-				return true;
-			}
+			return (input.substring(input.length() - 3).toLowerCase().equals("dev"));
 		}
 		return false;
 	}
