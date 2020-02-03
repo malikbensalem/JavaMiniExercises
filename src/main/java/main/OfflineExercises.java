@@ -196,17 +196,15 @@ public class OfflineExercises {
 		int temp=0;
 		int high=0;
 		for (char num:arg1.toCharArray()){
+			if (high<temp){
+				high=temp;
+			}
+			
 			if (num!=' '){
 				temp+=num-48;
 			}else{
-				if (high<temp){
-					high=temp;
-				}
 				temp=0;
 			}
-		}if (high<temp){
-				high=temp;
-		}
 		return high;
 	}
 }
